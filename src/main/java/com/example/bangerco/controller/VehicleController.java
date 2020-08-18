@@ -29,12 +29,12 @@ public class VehicleController {
 //    @GetMapping("/vehicleByName/{name}")
   //  public Vehicle findVehicleByName(@PathVariable String name) {return service.getVehiclesByName(name); }
 
-    @PutMapping("/update")
+    @PutMapping("/updateVehicleDetails")
     public Vehicle updateVehicle(@RequestBody Vehicle vehicle) {
         return service.updateVehicle(vehicle);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/deleteVehicleInfo/{id}")
     public String deleteVehicle(@PathVariable int id) {
         return service.deleteVehicle(id);
     }
