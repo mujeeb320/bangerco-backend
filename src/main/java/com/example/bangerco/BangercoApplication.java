@@ -10,4 +10,6 @@ public class BangercoApplication {
         SpringApplication.run(BangercoApplication.class, args);
     }
 
+    public void contextLoads() {
+    }
 }
